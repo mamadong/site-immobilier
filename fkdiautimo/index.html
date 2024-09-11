@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez des terrains et maisons à vendre. Consultez nos annonces pour trouver votre futur bien immobilier.">
+    <title>Terrains et Maisons à Vendre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo de l'entreprise" class="logo">
+        </div>
+        <h1>Bienvenue sur notre site immobilier</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#terrains">Terrains</a></li>
+                <li><a href="#maisons">Maisons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hours">
+            <p>Horaires : 8h à 17h, tous les jours</p>
+        </div>
+		
+		<div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+0707856939">0707856939</a></p>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+0505131300">0505131300</a></p>
+        </div>
+    </header>
+	<section id="about-us">
+    <h2>À propos de notre entreprise</h2>
+    <p>
+        Notre entreprise est spécialisée dans la vente de terrains et de maisons, offrant un service complet qui comprend 
+        la gestion de toutes les démarches administratives. Nous nous engageons à faciliter l'acquisition de biens 
+        immobiliers pour nos clients, en leur garantissant un accompagnement personnalisé tout au long du processus, 
+        de la visite jusqu'à la signature finale.
+    </p>
+    <p>
+        En plus de nos services directs de vente, nous agissons également en tant qu'intermédiaire pour les particuliers 
+        et les structures souhaitant vendre leurs terrains ou leurs maisons. Que vous soyez un propriétaire individuel 
+        ou une entreprise immobilière, nous vous aidons à mettre en valeur vos biens et à les proposer à des acheteurs 
+        potentiels dans les meilleures conditions possibles.
+    </p>
+    <p>
+        Notre équipe expérimentée est disponible pour répondre à toutes vos questions et vous assister dans chacune des étapes, 
+        garantissant ainsi une transaction immobilière fluide, sécurisée et rapide.
+    </p>
+</section>
+
+
+    <main class="content-section">
+        <section id="accueil">
+            <h2>Nos dernières annonces</h2>
+            <div class="carousel" id="carouselAccueil">
+                <div class="carousel-images">
+                    <img src="https://via.placeholder.com/600x400?text=Maison+1" alt="Maison 1">
+                    <img src="https://via.placeholder.com/600x400?text=Terrain+1" alt="Terrain 1">
+                    <img src="https://via.placeholder.com/600x400?text=Maison+2" alt="Maison 2">
+                </div>
+                <button class="prev" onclick="moveCarousel(-1, 'carouselAccueil')">❮</button>
+                <button class="next" onclick="moveCarousel(1, 'carouselAccueil')">❯</button>
+            </div>
+        </section>
+
+        <section id="terrains">
+            <h2>Terrains disponibles</h2>
+            <div class="carousel" id="carouselTerrains">
+                <div class="carousel-images">
+                    <img src="https://via.placeholder.com/600x400?text=Terrain+1" alt="Terrain 1">
+                    <img src="https://via.placeholder.com/600x400?text=Terrain+2" alt="Terrain 2">
+                    <img src="https://via.placeholder.com/600x400?text=Terrain+3" alt="Terrain 3">
+                </div>
+                <button class="prev" onclick="moveCarousel(-1, 'carouselTerrains')">❮</button>
+                <button class="next" onclick="moveCarousel(1, 'carouselTerrains')">❯</button>
+            </div>
+        </section>
+
+        <section id="maisons">
+            <h2>Maisons disponibles</h2>
+            <div class="carousel" id="carouselMaisons">
+                <div class="carousel-images">
+                    <img src="https://via.placeholder.com/600x400?text=Maison+1" alt="Maison 1">
+                    <img src="https://via.placeholder.com/600x400?text=Maison+2" alt="Maison 2">
+                    <img src="https://via.placeholder.com/600x400?text=Maison+3" alt="Maison 3">
+                </div>
+                <button class="prev" onclick="moveCarousel(-1, 'carouselMaisons')">❮</button>
+                <button class="next" onclick="moveCarousel(1, 'carouselMaisons')">❯</button>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Immobilier. Tous droits réservés.</p>
+        <p>Horaires d'ouverture : 8h à 17h, tous les jours</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
